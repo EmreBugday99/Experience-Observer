@@ -173,3 +173,16 @@ Readability Load:
 Context Modifiers:
   Offscreen Multiplier: 0.25
   Distance Falloff: Curve
+```
+### Key Distinction
+* **Impulse:** Short burst (explosion, hit, kill)
+* **Sustain:** Ongoing presence (enemy alive, hazard active)
+
+---
+
+## Consumer Guidelines
+* **Treat signals as advisory:** Systems should never be forced to react.
+* **Prefer illusionary or cosmetic adjustments first:** Change the feel (audio/VFX) before changing the simulation (stats/logic).
+* **Apply cooldowns and caps:** Prevent systems from oscillating or reacting too frequently.
+* **Avoid compensating in multiple systems simultaneously:** Prevents over-correction (e.g., don't spawn fewer enemies AND make them weaker at the same time).
+
